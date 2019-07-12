@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>567</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>648</IntrospectionStateNumber>
+    </database>
+    <database id="3" parent="1" name="test">
+      <ObjectId>16393</ObjectId>
+      <StateNumber>570</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>650</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|16394|16396|1
+sequence|table|16406|16408|1
+sequence|table|16467|16469|1
+</Relations>
+    </database>
+    <role id="4" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="13" parent="3" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <StateNumber>366</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="3" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="3" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="3" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>360</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>651</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="19" parent="3" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="3" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="3" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="3" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="3" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="3" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="25" parent="3" name="plpgsql">
+      <ObjectId>12998</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>519</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="26" parent="18" name="feedback_id_seq">
+      <ObjectId>16467</ObjectId>
+      <StateNumber>647</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="27" parent="18" name="pkg_id_seq">
+      <ObjectId>16394</ObjectId>
+      <StateNumber>571</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="28" parent="18" name="scopeitem_id_seq">
+      <ObjectId>16406</ObjectId>
+      <StateNumber>575</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="29" parent="18" name="feedback">
+      <ObjectId>16469</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>647</StateNumber>
+    </table>
+    <table id="30" parent="18" name="packages">
+      <ObjectId>16436</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>586</StateNumber>
+    </table>
+    <table id="31" parent="18" name="packages_scopeitems_scopeitem">
+      <ObjectId>16445</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>586</StateNumber>
+    </table>
+    <table id="32" parent="18" name="pkg">
+      <ObjectId>16396</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>585</StateNumber>
+    </table>
+    <table id="33" parent="18" name="pkg_scopeitems_scopeitem">
+      <ObjectId>16417</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>585</StateNumber>
+    </table>
+    <table id="34" parent="18" name="scopeitem">
+      <ObjectId>16408</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>585</StateNumber>
+    </table>
+    <column id="35" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>647</StateNumber>
+      <DefaultExpression>nextval(&apos;feedback_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="36" parent="29" name="text">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>647</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="37" parent="29" name="createdAt">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>647</StateNumber>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="38" parent="29" name="PK_8389f9e087a57689cd5be8b2b13">
+      <ObjectId>16477</ObjectId>
+      <StateNumber>647</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="39" parent="29" name="PK_8389f9e087a57689cd5be8b2b13">
+      <ObjectId>16478</ObjectId>
+      <StateNumber>647</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_8389f9e087a57689cd5be8b2b13</UnderlyingIndexName>
+    </key>
+    <column id="40" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>614</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="30" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>586</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="42" parent="30" name="PK_020801f620e21f943ead9311c98">
+      <ObjectId>16443</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="43" parent="30" name="PK_020801f620e21f943ead9311c98">
+      <ObjectId>16444</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_020801f620e21f943ead9311c98</UnderlyingIndexName>
+    </key>
+    <column id="44" parent="31" name="packagesId">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>586</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="45" parent="31" name="scopeitemId">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>586</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="46" parent="31" name="PK_22addff854896b59e563ec3e88e">
+      <ObjectId>16448</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>packagesId
+scopeitemId</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="47" parent="31" name="IDX_2bf464f42b38a9b8b7c5443c4a">
+      <ObjectId>16450</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>packagesId</ColNames>
+    </index>
+    <index id="48" parent="31" name="IDX_ab524ffae71b3fe60c1324af66">
+      <ObjectId>16451</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>scopeitemId</ColNames>
+    </index>
+    <key id="49" parent="31" name="PK_22addff854896b59e563ec3e88e">
+      <ObjectId>16449</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>packagesId
+scopeitemId</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_22addff854896b59e563ec3e88e</UnderlyingIndexName>
+    </key>
+    <foreign-key id="50" parent="31" name="FK_2bf464f42b38a9b8b7c5443c4a8">
+      <ObjectId>16462</ObjectId>
+      <StateNumber>614</StateNumber>
+      <ColNames>packagesId</ColNames>
+      <RefTableId>16436</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>packages</RefTableName>
+      <RefKeyName>PK_020801f620e21f943ead9311c98</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="51" parent="31" name="FK_ab524ffae71b3fe60c1324af66f">
+      <ObjectId>16457</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>scopeitemId</ColNames>
+      <RefTableId>16408</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>scopeitem</RefTableName>
+      <RefKeyName>PK_2c5791ac741fa2f18bca9590b44</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="52" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>571</StateNumber>
+      <DefaultExpression>nextval(&apos;pkg_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="53" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>573</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="54" parent="32" name="PK_86add2a46bc8d6eec61c5e0985c">
+      <ObjectId>16404</ObjectId>
+      <StateNumber>571</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="55" parent="32" name="PK_86add2a46bc8d6eec61c5e0985c">
+      <ObjectId>16405</ObjectId>
+      <StateNumber>571</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_86add2a46bc8d6eec61c5e0985c</UnderlyingIndexName>
+    </key>
+    <column id="56" parent="33" name="pkgId">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>585</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="33" name="scopeitemId">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>585</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="58" parent="33" name="PK_4003a71654dcc7061e8b416c5c6">
+      <ObjectId>16420</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>pkgId
+scopeitemId</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="59" parent="33" name="IDX_0ab5b2c55e16423b07da423882">
+      <ObjectId>16422</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>pkgId</ColNames>
+    </index>
+    <index id="60" parent="33" name="IDX_5e8ec554b96a92996f85adb7cb">
+      <ObjectId>16423</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>scopeitemId</ColNames>
+    </index>
+    <key id="61" parent="33" name="PK_4003a71654dcc7061e8b416c5c6">
+      <ObjectId>16421</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>pkgId
+scopeitemId</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_4003a71654dcc7061e8b416c5c6</UnderlyingIndexName>
+    </key>
+    <foreign-key id="62" parent="33" name="FK_0ab5b2c55e16423b07da4238821">
+      <ObjectId>16424</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>pkgId</ColNames>
+      <RefTableId>16396</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>pkg</RefTableName>
+      <RefKeyName>PK_86add2a46bc8d6eec61c5e0985c</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="63" parent="33" name="FK_5e8ec554b96a92996f85adb7cb0">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>585</StateNumber>
+      <ColNames>scopeitemId</ColNames>
+      <RefTableId>16408</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>scopeitem</RefTableName>
+      <RefKeyName>PK_2c5791ac741fa2f18bca9590b44</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="64" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <DefaultExpression>nextval(&apos;scopeitem_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="65" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="66" parent="34" name="PK_2c5791ac741fa2f18bca9590b44">
+      <ObjectId>16415</ObjectId>
+      <StateNumber>575</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="67" parent="34" name="PK_2c5791ac741fa2f18bca9590b44">
+      <ObjectId>16416</ObjectId>
+      <StateNumber>575</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_2c5791ac741fa2f18bca9590b44</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
