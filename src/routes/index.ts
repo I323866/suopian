@@ -1,5 +1,6 @@
 import feedback from './feedback'
-
+import photo from './photo'
 export default {
-  feedback
+  feedback,
+  photo
 }

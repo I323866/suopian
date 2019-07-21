@@ -1,24 +1,19 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
 
 @Entity()
-export class Feedback {
+export class Photo {
   @PrimaryGeneratedColumn()
   public id: number;
 
   @Column()
-  name: string;
+  public description: string;
 
   @Column()
-  description: string;
+  public filename: string;
+
 
   @Column()
-  filename: string;
-
-  @Column()
-  views: number;
-
-  @Column()
-  isPublished: boolean;
+  public isPublished: boolean;
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   public createdAt: number;

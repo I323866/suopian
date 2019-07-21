@@ -64,3 +64,8 @@ yarn.lock
 package-lock.json
 dist
 ui/ui5
+ormconfig.json
+.idea/workspace.xml
+.idea/dataSources/78ea2831-de9e-4199-a9b1-c351d0daac10.xml
+.vscode/launch.json
+.idea/dataSources/78ea2831-de9e-4199-a9b1-c351d0daac10.xml
